@@ -4,7 +4,7 @@
 ## Description
 The "Open Project Space" or "OPS" class assigned 3 projects to students which incorporated the OPS kits. Skills that were taught included: reading schematics, coding, and circuit building. This repository documents information given and how I completed the projects. Code Templates and Schematics were taken from the OPS website, but everything else was designed by me.
 
-## ## How to recreate the projects for personal use
+## How to recreate the projects for personal use
 In order to recreate the project, go to the OPS website for the OPS kit and additional instructions. 
 https://sites.google.com/ncsu.edu/ncstateops/home
 
