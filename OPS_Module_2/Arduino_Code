@@ -1,0 +1,192 @@
+// Load our predefined pitches into the sketch:
+#include "pitches.h" 
+
+// Define pins
+#define speaker 2 //Blue and connected to the speaker
+#define pot A7 //Used for the potentiometer
+#define displayLED1 6 //Green LED
+#define displayLED2 4 //Red LED
+//#define displayLED3 7 
+/*
+int displayLED1 = 5;
+int displayLED2 = 7;
+*/
+//#define etc.
+
+// You can modify this global variable to change note length 
+// (how many ms each note takes):
+int NOTE_DUR = 137; 
+// You might need to change NOTE_DUR within each of your 
+// song functions if they play at different tempos!
+
+/* Function Declarations 
+ Note: We *define* what they do later, 
+ but we *declare* them before setup() and loop() 
+ so the compiler knows they exist.
+*/
+void play(int, int); //"a function that returns nothing (void)
+                     // and accepts two int arguments"
+void song1();
+void song2();
+void song3();
+// We can #include our song files next 
+// (they use play, so we need it to be declared before
+// #including them)
+// Include Despacito.h?
+// Include Beethoven.h?
+// Include Empire.h?
+
+// Setup function; runs once when you power on the board
+void setup() {
+  // Configure pinModes
+  // Play a startup beep? (optional)
+  // Blink LED_BUILTIN at startup? (also optional)
+  // Turn on the Serial interface? (optional, but useful!)
+
+  //Configuring Pins
+  pinMode(displayLED1,OUTPUT);
+  pinMode(displayLED2,OUTPUT);
+
+  //Blink on startup
+  digitalWrite(speaker,HIGH);
+  delay(1500);
+  digitalWrite(speaker,LOW);
+
+  //Turn on serial interface
+  Serial.begin(9600);
+}
+
+// Loop function; runs over and over again forever
+void loop() {
+  // Read the potentiometer
+  int potValue = analogRead(pot); //Ranges from 0 to 1023
+  // Print debug value(s) to Serial? (optional, but useful!)
+  //Serial.println(potValue);
+
+  // Determine what song is selected (hint: if, else if, else)
+  // For each possible song selection:
+    // Display the song selection on our LED(s)
+    // Play the song by executing its function: 
+    // song#();
+
+  // if else statements to decide song based on potValue. LED in binary represent the song number
+  if (potValue <= 50) //Option to turn off sound
+  {
+    Serial.println("test0");
+    
+    digitalWrite(displayLED1,LOW);
+    digitalWrite(displayLED2,LOW);
+    delay(5000);
+  }
+  else if (potValue <= 341)
+  {
+    Serial.println("test1");
+    //digitalWrite must come before the song function
+    digitalWrite(displayLED1,LOW);
+    digitalWrite(displayLED2,HIGH);
+    song1();
+    
+  }
+  else if (potValue <= 682)
+  {
+    Serial.println("test2");
+    digitalWrite(displayLED1,HIGH);
+    digitalWrite(displayLED2,LOW);
+    song2();
+  }
+  else
+  {
+    Serial.println("test3");
+    digitalWrite(displayLED1,HIGH);
+    digitalWrite(displayLED2,HIGH);
+    song3();
+  }
+
+  /*
+  digitalWrite(speaker,HIGH);
+  delay(1500);
+  digitalWrite(speaker,LOW);
+  */
+}
+
+/* Play function definition
+   Plays a note for (duration) note lengths
+   Hint: Use the note definitions from pitches.h when 
+   calling play()!
+*/
+void play(int note, int duration) {
+  tone(speaker, note);
+  delay(duration * NOTE_DUR);
+  noTone(speaker);
+  delay(duration * NOTE_DUR);
+}
+
+// Loading predefined songs
+#include "Despacito.h"
+#include "Beethoven.h"
+#include "Empire.h"
+
+// Song function definitions
+void song1() {
+  // Write a song using multiple calls to play()
+  // Don't forget, you can use delay() for any pauses
+  // in the song
+
+  Elise(); //From Beethoven.h
+  
+  delay(3000); //Brief time for silence
+}
+
+void song2() {
+  // Write another song using multiple calls to play()
+
+  // All-Star (Custom Made)
+  NOTE_DUR = 120;
+  
+  play(NOTE_FS5, 3);
+  delay(300);
+  play(NOTE_AS5, 1);
+  play(NOTE_AS5, 2);
+  play(NOTE_GS5, 1);
+  play(NOTE_FS5, 1);
+  play(NOTE_FS5, 1);
+  play(NOTE_B5, 1);
+  play(NOTE_AS5, 1);
+  play(NOTE_AS5, 1);
+  play(NOTE_GS5, 1);
+  play(NOTE_GS5, 1);
+
+  //Despacito(); //From Despacito
+  //Serial.println("test2");
+  delay(3000); //Brief time for silence
+}
+
+void song3() {
+  // Write a third song using multiple calls to play()
+  // Don't want to write any more songs? You're welcome 
+  // to use Elise(), Despacito(), or Empire() as one of
+  // your songs--but you need to write at least two of 
+  // your own!
+  
+  
+  //Draedon Motif (Custom Made)
+  NOTE_DUR = 137;
+
+  play(NOTE_DS5, 1);
+  play(NOTE_G5, 1);
+  play(NOTE_F5, 2);
+  play(NOTE_DS5, 2);
+  play(NOTE_AS5, 3);
+  play(NOTE_C6, 1);
+  play(NOTE_F5, 3);
+  delay(300);
+  play(NOTE_FS5, 1);
+  play(NOTE_AS5, 1);
+  play(NOTE_GS5, 5);
+  play(NOTE_CS6, 1);
+
+  
+  //March();
+  //Serial.println("test3");
+  delay(3000); //Brief time for silence
+}
