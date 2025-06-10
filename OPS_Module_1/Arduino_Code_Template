@@ -1,0 +1,26 @@
+// Define pins:
+// first LED
+// second LED
+// more LEDs...?
+#define pot [PIN]
+
+// Setup runs once at startup
+void setup() {
+  // Set the LEDs as OUTPUTs
+  // Set the potentiometer as an INPUT
+  // Start the Serial interface
+}
+
+// Loop runs forever until you unplug the Arduino
+void loop() {
+  // Read the potentiometer's value and store it into a variable
+  int potValue = analogRead(pot);
+  // Do some math on that variable?
+  // Print something to serial
+  // Toggle LED(s) on
+  // Toggle other LED(s) off
+  // Delay for some time (based on the potentiometer value?)
+  // Toggle LED(s) off
+  // Toggle other LED(s) on
+  // Delay for some time (based on the potentiometer value?)
+}
