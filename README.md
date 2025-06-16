@@ -10,6 +10,7 @@ https://sites.google.com/ncsu.edu/ncstateops/home
 
 ## Project Issues & Concerns
 * Project 4 was made optional
+* Some of the photos are unclear or difficult to reference
 
 ## Credits
 * Repository Creator: Maxwell Moon
