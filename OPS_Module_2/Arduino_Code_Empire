@@ -1,0 +1,48 @@
+/* Empire.h
+  The Imperial March
+  
+  Open Project Space
+  IEEE Student Chapter
+  NC State University 
+*/
+
+void March() {
+    NOTE_DUR = 4;
+    
+    play(NOTE_A4, 50);
+    delay(20 * NOTE_DUR);
+    play(NOTE_A4, 50);
+    delay(20 * NOTE_DUR);
+    play(NOTE_A4, 50);
+    delay(20 * NOTE_DUR);
+    play(NOTE_F4, 40);
+    delay(5 * NOTE_DUR);
+    play(NOTE_C5, 20);
+    delay(5 * NOTE_DUR);
+    play(NOTE_A4, 60);
+    delay(10 * NOTE_DUR);
+    play(NOTE_F4, 40);
+    delay(5 * NOTE_DUR);
+    play(NOTE_C5, 20);
+    delay(5 * NOTE_DUR);
+    play(NOTE_A4, 60);
+    delay(80 * NOTE_DUR);
+    play(NOTE_E5, 50);
+    delay(20 * NOTE_DUR);
+    play(NOTE_E5, 50);
+    delay(20 * NOTE_DUR);
+    play(NOTE_E5, 50);
+    delay(20 * NOTE_DUR);
+    play(NOTE_F5, 40);
+    delay(5 * NOTE_DUR);
+    play(NOTE_C5, 20);
+    delay(5 * NOTE_DUR);
+    play(NOTE_G5, 60);
+    delay(10 * NOTE_DUR);
+    play(NOTE_F5, 40);
+    delay(5 * NOTE_DUR);
+    play(NOTE_C5, 20);
+    delay(5 * NOTE_DUR);
+    play(NOTE_A4, 60);
+    delay(40 * NOTE_DUR);
+}

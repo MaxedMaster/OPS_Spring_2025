@@ -1,0 +1,30 @@
+int ledPin1 = 2; //LED 1, blue
+int ledPin2 = 5; //LED 2, red
+# define pot A2
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(ledPin1,OUTPUT);
+  pinMode(ledPin2,OUTPUT);
+  //pinMode(pot,OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  //Variables here
+  int potValue = analogRead(pot);
+  int minimumTime = 500; //Each LED will be on for atleast this amount of time
+  int timer1 = (potValue)+minimumTime;
+  int timer2 = (1023-potValue)+minimumTime;
+
+  Serial.println(potValue);
+  //LED1 off
+  digitalWrite(ledPin1,LOW);
+  digitalWrite(ledPin2,HIGH);
+  delay(timer1);
+  //LED2 off
+  digitalWrite(ledPin1,HIGH);
+  digitalWrite(ledPin2,LOW);
+  delay(timer2);
+}
