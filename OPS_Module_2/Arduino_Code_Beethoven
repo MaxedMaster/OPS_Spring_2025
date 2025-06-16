@@ -1,0 +1,265 @@
+/* Beethoven.h
+  Beethoven's Für Elise
+
+  Open Project Space
+  IEEE Student Chapter
+  NC State University 
+*/
+void Elise(){ 
+    NOTE_DUR = 28;
+    
+    // play e4
+    play(NOTE_E4, 3.3);
+    // delay(NOTE_DUR * 3.5);
+    // play d4#
+    play(NOTE_DS4, 3);
+    // delay(NOTE_DUR * 3.5);
+    // play e4
+    play(NOTE_E4, 3);
+    // delay(NOTE_DUR * 3.5);
+    // play d4#
+    play(NOTE_DS4, 3);
+    // delay(NOTE_DUR * 3.5);
+    // play e4
+    play(NOTE_E4, 3);
+    // delay(NOTE_DUR * 3.5);
+    // play b3
+    play(NOTE_B3, 3);
+    // delay(NOTE_DUR * 4);
+    // play d4
+    play(NOTE_D4, 3);
+    // delay(NOTE_DUR * 4);
+    // play c4
+    play(NOTE_C4, 3);
+    // delay(NOTE_DUR * 4);
+    // play a3
+    play(NOTE_A3, 9);
+    // delay(NOTE_DUR * 10);
+    // play d3
+    play(NOTE_D3, 3);
+    // delay(NOTE_DUR * 3.5);
+    // play f3
+    play(NOTE_F3, 3);
+    // delay(NOTE_DUR * 4);
+    // play a3
+    play(NOTE_A3, 3);
+    // delay(NOTE_DUR * 4);
+    // play b3
+    play(NOTE_B3, 9);
+    // delay(NOTE_DUR * 10);
+    // play f3
+    play(NOTE_F3, 3);
+    // delay(NOTE_DUR * 4);
+    // play a3#
+    play(NOTE_AS3, 3);
+    // delay(NOTE_DUR * 4);
+    // play b3
+    play(NOTE_B3, 3);
+    // delay(NOTE_DUR * 4);
+    // play c4
+    play(NOTE_C4, 9);
+    // delay(NOTE_DUR * 10);
+    // delay(NOTE_DUR * 3);
+    // play e4
+    play(NOTE_E4, 3);
+    // delay(NOTE_DUR * 4);
+    // play d4#
+    play(NOTE_DS4, 3);
+    // delay(NOTE_DUR * 4);
+    // play e4
+    play(NOTE_E4, 3);
+    // delay(NOTE_DUR * 4);
+    // play d4#
+    play(NOTE_DS4, 3);
+    // delay(NOTE_DUR * 4);
+    // play e4
+    play(NOTE_E4, 3);
+    // delay(NOTE_DUR * 4);
+    // play b3
+    play(NOTE_B3, 3);
+    // delay(NOTE_DUR * 4);
+    // play d4
+    play(NOTE_D4, 3);
+    // delay(NOTE_DUR * 4);
+    // play c4
+    play(NOTE_C4, 3);
+    // delay(NOTE_DUR * 4);
+    // play a3
+    play(NOTE_A3, 9);
+    // delay(NOTE_DUR * 10);
+    // play d3
+    play(NOTE_D3, 3);
+    // delay(NOTE_DUR * 4);
+    // play f3
+    play(NOTE_F3, 3);
+    // delay(NOTE_DUR * 4);
+    // play a3
+    play(NOTE_A3, 3);
+    // delay(NOTE_DUR * 4);
+    // play b3
+    play(NOTE_B3, 9);
+    // delay(NOTE_DUR * 10);
+    // play f3
+    play(NOTE_F3, 3);
+    // delay(NOTE_DUR * 4);
+    // play c4
+    play(NOTE_C4, 3);
+    // delay(NOTE_DUR * 4);
+    // play b3
+    play(NOTE_B3, 3);
+    // delay(NOTE_DUR * 4);
+    // play a3
+    play(NOTE_A3, 9);
+    // delay(NOTE_DUR * 10);
+    // play b3
+    play(NOTE_B3, 3);
+    // delay(NOTE_DUR * 4);
+    // play c4
+    play(NOTE_C4, 3);
+    // delay(NOTE_DUR * 4);
+    // play d4
+    play(NOTE_D4, 3);
+    // delay(NOTE_DUR * 4);
+    // play e4
+    play(NOTE_E4, 9);
+    // delay(NOTE_DUR * 10);
+    // play g3
+    play(NOTE_G3, 3);
+    // delay(NOTE_DUR * 4);
+    // play f4
+    play(NOTE_F4, 3);
+    // delay(NOTE_DUR * 4);
+    // play e4
+    play(NOTE_E4, 3);
+    // delay(NOTE_DUR * 4);
+    // play d4
+    play(NOTE_D4, 9);
+    // delay(NOTE_DUR * 10);
+    // play e3
+    play(NOTE_E3, 3);
+    // delay(NOTE_DUR * 4);
+    // play e4
+    play(NOTE_E4, 3);
+    // delay(NOTE_DUR * 4);
+    // play d4
+    play(NOTE_D4, 3);
+    // delay(NOTE_DUR * 4);
+    // play c4
+    play(NOTE_C4, 9);
+    // delay(NOTE_DUR * 10);
+    // play d3
+    play(NOTE_D3, 3);
+    // delay(NOTE_DUR * 4);
+    // play d4
+    play(NOTE_D4, 3);
+    // delay(NOTE_DUR * 4);
+    // play c4
+    play(NOTE_C4, 3);
+    // delay(NOTE_DUR * 4);
+    // play b3
+    play(NOTE_B3, 9);
+    // delay(NOTE_DUR * 10);
+    // delay(NOTE_DUR * 4);
+    // play e4
+    play(NOTE_E4, 3);
+    // delay(NOTE_DUR * 4);
+    // play d4#
+    play(NOTE_DS4, 3);
+    // delay(NOTE_DUR * 3.5);
+    // play e4
+    play(NOTE_E4, 3);
+    // delay(NOTE_DUR * 3.5);
+    // play d4#
+    play(NOTE_DS4, 3);
+    // delay(NOTE_DUR * 3.5);
+    // play e4
+    play(NOTE_E4, 3);
+    // delay(NOTE_DUR * 3.5);
+    // play b3
+    play(NOTE_B3, 3);
+    // delay(NOTE_DUR * 4);
+    // play d4
+    play(NOTE_D4, 3);
+    // delay(NOTE_DUR * 4);
+    // play c4
+    play(NOTE_C4, 3);
+    // delay(NOTE_DUR * 4);
+    // play a3
+    play(NOTE_A3, 9);
+    // delay(NOTE_DUR * 10);
+    // play d3
+    play(NOTE_D3, 3);
+    // delay(NOTE_DUR * 3.5);
+    // play f3
+    play(NOTE_F3, 3);
+    // delay(NOTE_DUR * 4);
+    // play a3
+    play(NOTE_A3, 3);
+    // delay(NOTE_DUR * 4);
+    // play b3
+    play(NOTE_B3, 9);
+    // delay(NOTE_DUR * 10);
+    // play f3
+    play(NOTE_F3, 3);
+    // delay(NOTE_DUR * 4);
+    // play a3#
+    play(NOTE_AS3, 3);
+    // delay(NOTE_DUR * 4);
+    // play b3
+    play(NOTE_B3, 3);
+    // delay(NOTE_DUR * 4);
+    // play c4
+    play(NOTE_C4, 9);
+    // delay(NOTE_DUR * 10);
+    // delay(NOTE_DUR * 3);
+    // play e4
+    play(NOTE_E4, 3);
+    // delay(NOTE_DUR * 4);
+    // play d4#
+    play(NOTE_DS4, 3);
+    // delay(NOTE_DUR * 4);
+    // play e4
+    play(NOTE_E4, 3);
+    // delay(NOTE_DUR * 4);
+    // play d4#
+    play(NOTE_DS4, 3);
+    // delay(NOTE_DUR * 4);
+    // play e4
+    play(NOTE_E4, 3);
+    // delay(NOTE_DUR * 4);
+    // play b3
+    play(NOTE_B3, 3);
+    // delay(NOTE_DUR * 4);
+    // play d4
+    play(NOTE_D4, 3);
+    // delay(NOTE_DUR * 4);
+    // play c4
+    play(NOTE_C4, 3);
+    // delay(NOTE_DUR * 4);
+    // play a3
+    play(NOTE_A3, 9);
+    // delay(NOTE_DUR * 10);
+    // play d3
+    play(NOTE_D3, 3);
+    // delay(NOTE_DUR * 4);
+    // play f3
+    play(NOTE_F3, 3);
+    // delay(NOTE_DUR * 4);
+    // play a3
+    play(NOTE_A3, 3);
+    // delay(NOTE_DUR * 4);
+    // play b3
+    play(NOTE_B3, 9);
+    // delay(NOTE_DUR * 10);
+    // play f3
+    play(NOTE_F3, 3);
+    // delay(NOTE_DUR * 4);
+    // play c4
+    play(NOTE_C4, 3);
+    // delay(NOTE_DUR * 4);
+    // play b3
+    play(NOTE_B3, 3);
+    // delay(NOTE_DUR * 4);
+    // play a3
+    play(NOTE_A3, 9);
+}
